@@ -85,6 +85,47 @@ public class MainActivity extends AppCompatActivity {
     *  text size large 22sp
     * */
 
+    /*
+    * drawable-mdpi     // bitmap for medium-density
+    * drawable-hdpi     // bitmap for high-density
+    * drawable-xhdpi    // bitmap for extra-high-density
+    * drawable-xxhdpi   // bitmap for extra-extra-high-density
+    * drawable-xxxhdpi
+    * */
+
+    /*
+    * layout/mylayout.xml               // layout for normal screen size (default)
+    * layout-large/mylayout.xml         // layout for large screen size
+    * layout-xlarge/mylayout.xml        // layout for extra-large screen size
+    * layout-xlarge-land/mylayout.xml   // layout for extra-large in landscape orientation screen size
+    *   layout-sw600dp/mylayout.xml     // for 7 tablets (600dp wide and bigger )
+    *   layout-sw720dp/mylayout.xml     // for 10 tablets (720dp wide and bigger )
+    *
+    *   layout-w720dp/mylayout.xml     // multi-pane (any screen with 600dp available width or more)
+    *
+    *   sw                                      w                       h
+    *   smallest possible width/height          available width         available height
+    *
+    *       portrait                            landscape
+    *   device a    360dp * 640dp               640dp * 360dp
+    *   device a    480dp * 853dp               853dp * 480p
+    *   device a    600dp * 960dp               960dp * 6000dp
+    *
+    *   layout-sw360dp  // for all devices that are at least 360dp wide or bigger
+    *                   //  >= [device a, device b, device c]
+    *
+    *   layout-sw600dp  // for all devices that are at least 600dp wide or bigger
+    *                   // sw >= 600dp device c only
+    *
+    *   layout-w480dp   // for all device that have 480dp width or more
+    *                   // w >= 480dp [device b, device c in portait]
+    *                   // w >= 480dp [device a , device b, device c in landscape]
+    *
+    *   layout-h480dp   // for all devices tht have 480dp height or more
+    *                       h >= 480dp [device a, device b, device c in portrait]
+    *                       h >= 480dp [device b, device c, in landscape]
+    *
+    * */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
