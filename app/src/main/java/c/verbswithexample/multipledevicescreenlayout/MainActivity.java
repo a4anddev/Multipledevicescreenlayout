@@ -127,6 +127,34 @@ public class MainActivity extends AppCompatActivity {
     *
     * */
 
+
+    /*
+    * sw, h and w are available in android 3.2 [api-13] and above version
+    * for lower api levels such as api 7 layout aliases
+    * compatibility for lower apis
+    * reduces layout maintenance overhead
+    * */
+
+    /*
+    * for smartphone -> layout and layout-land
+    *
+    * for tablets of 7 screen size -> layout-sw600dp-port
+    * for tablets of 7 screen size -> layout-sw600dp-land
+    *
+    * for tablets of 10 screen size -> layout-sw720dp-port
+    * for tablets of 10 screen size -> layout-sw720dp-land
+    *
+    * using layout aliases for smartphone
+    *   layout and values       -> for all api
+    *   values-sw600dp-port     -> 3.2 onwords [api 13+]
+    *   values-sw600dp-land     -> 3.2 onwords [api 13+]
+    *
+    *   provide backward compatibility
+    *   values-xlarge-port     -> 3.2 below [api 7+]
+    *   values-xlarge-land     -> 3.2 below [api 7+]
+    *
+    * */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
